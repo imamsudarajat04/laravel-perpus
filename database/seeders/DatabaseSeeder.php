@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\models\Buku;
-use App\models\User;
+use App\Models\Buku;
+use App\Models\User;
 use App\Models\Profile;
-use App\models\Kategori;
+use App\Models\Kategori;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
