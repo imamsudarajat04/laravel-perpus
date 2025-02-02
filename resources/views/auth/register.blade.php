@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="npm" class="col-md-4 col-form-label text-md-end text-dark">{{ __('NPM') }}</label>
+                            <label for="npm" class="col-md-4 col-form-label text-md-end text-dark">{{ __('ID ANGGOTA') }}</label>
 
                             <div class="col-md-6">
                                 <input id="npm" type="text" class="form-control @error('npm') is-invalid @enderror" name="npm" value="{{ old('npm') }}">
@@ -38,12 +38,12 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="prodi" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Program Studi') }}</label>
+                            <label for="kelas" class="col-md-4 col-form-label text-md-end text-dark">{{ __('Kelas') }}</label>
 
                             <div class="col-md-6">
-                                <input id="prodi" type="text" class="form-control @error('prodi') is-invalid @enderror" name="prodi" value="{{ old('prodi') }}">
+                                <input id="kelas" type="text" class="form-control @error('kelas') is-invalid @enderror" name="kelas" value="{{ old('kelas') }}">
 
-                                @error('prodi')
+                                @error('kelas')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

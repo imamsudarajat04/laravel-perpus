@@ -46,35 +46,35 @@ class DatabaseSeeder extends Seeder
      ]);
 
      Profile::create([
-    'npm'=>'admin',
-    'prodi'=>'admin',
-    'alamat'=>'kampus',
-    'noTelp'=>'admin',
-    'users_id'=>'1',
+        'npm'=>'admin',
+        'kelas'=>'admin',
+        'alamat'=>'kampus',
+        'noTelp'=>'admin',
+        'users_id'=>'1',
     ]);
 
      Profile::create([
-     'npm'=>'2113201044',
-     'prodi'=>'Teknik Informatika',
-     'alamat'=>'Bandung',
-     'noTelp'=>'089609760132',
-     'users_id'=>'2',
+         'npm'=>'2113201044',
+         'kelas'=>'1 A',
+         'alamat'=>'Bandung',
+         'noTelp'=>'089609760132',
+         'users_id'=>'2',
      ]);
 
      Profile::create([
-     'npm'=>'2113201040',
-     'prodi'=>'Tenkin Electro',
-     'alamat'=>'Jakata',
-     'noTelp'=>'08123975855',
-     'users_id'=>'3',
+         'npm'=>'2113201040',
+         'kelas'=>'2 B',
+         'alamat'=>'Jakata',
+         'noTelp'=>'08123975855',
+         'users_id'=>'3',
      ]);
 
      Profile::create([
-     'npm'=>'2113214013',
-     'prodi'=>'Sistem Informasi',
-     'alamat'=>'Garut',
-     'noTelp'=>'08958923134',
-     'users_id'=>'4',
+         'npm'=>'2113214013',
+         'kelas'=>'3 C',
+         'alamat'=>'Garut',
+         'noTelp'=>'08958923134',
+         'users_id'=>'4',
      ]);
 
 

@@ -16,7 +16,7 @@ class CreateProfileTable extends Migration
         Schema::create('profile', function (Blueprint $table) {
             $table->id();
             $table->string('npm')->unique();
-            $table->string('prodi');
+            $table->string('kelas');
             $table->string('alamat');
             $table->string('noTelp');
             $table->string('photoProfile')->nullable();

@@ -27,7 +27,7 @@
         @enderror
 
         <div class="form-group mx-4 my-2">
-            <label for="npm" class="text-md text-primary font-weight-bold">Nomor Induk Masiswa</label>
+            <label for="npm" class="text-md text-primary font-weight-bold">ID Anggota</label>
             <input type="text" id="npm" class="form-control @error('npm') is-invalid @enderror" name="npm" value="{{ old('npm') }}">
         </div>
 
@@ -82,8 +82,9 @@
 
 
         <div class="button-save d-flex justify-content-end">
+            <a href="/anggota" class="btn btn-danger mt-4 px-3 py-1">Batal</a>
             <button type="submit" class="btn btn-primary mt-4 mx-4 px-5 py-1">Simpan</button>
-        </form>
         </div>
     </div>
+</form>
 @endsection
