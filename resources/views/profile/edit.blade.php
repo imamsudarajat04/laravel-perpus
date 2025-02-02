@@ -28,7 +28,7 @@
             @enderror
 
             <div class="form-group mx-4 my-2">
-                <label for="npm" class="text-md text-primary font-weight-bold">Nomor Induk Masiswa</label>
+                <label for="npm" class="text-md text-primary font-weight-bold">ID Anggota</label>
                 <input type="text" name="npm" class="form-control" value="{{ old('npm', $profile->npm) }}">
             </div>
 
@@ -37,11 +37,11 @@
             @enderror
 
             <div class="form-group mx-4 my-2">
-                <label for="nama" class="text-md text-primary font-weight-bold">Program Studi</label>
-                <input type="text" name="prodi"class="form-control" value="{{ old('prodi', $profile->prodi) }}">
+                <label for="kelas" class="text-md text-primary font-weight-bold">Kelas</label>
+                <input type="text" name="kelas" class="form-control" value="{{ old('kelas', $profile->kelas) }}">
             </div>
 
-            @error('prodi')
+            @error('kelas')
                 <div class="alert-danger mx-2"> {{ $message }}</div>
             @enderror
 
