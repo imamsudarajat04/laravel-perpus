@@ -51,7 +51,7 @@ class AnggotaController extends Controller
         $request->validate([
             'name'=> 'required',
             'npm'=> 'required|unique:profile',
-            'prodi'=> 'required',
+            'kelas'=> 'required',
             'alamat'=> 'required',
             'noTelp'=> 'required',
             'email'=>'required|unique:users',
@@ -61,7 +61,7 @@ class AnggotaController extends Controller
             'name.required'=>"Nama tidak boleh kosong",
             'npm.required'=>"Nomor Induk tidak boleh kosong",
             'npm.unique'=>"NPM Telah Digunakan",
-            'prodi.required'=>"Prodi tidak boleh kosong",
+            'kelas.required'=>"Kelas tidak boleh kosong",
             'alamat.required'=>"Alamat tidak boleh kosong",
             'noTelp.required'=>"Nomor Telepon tidak boleh kosong",
             'email.required'=>"Email tidak boleh kosong",
@@ -78,7 +78,7 @@ class AnggotaController extends Controller
 
         Profile::create([
             'npm'=>$request['npm'],
-            'prodi'=>$request['prodi'],
+            'kelas'=>$request['kelas'],
             'alamat'=>$request['alamat'],
             'noTelp'=>$request['noTelp'],
             'users_id'=>$user->id,
@@ -127,7 +127,7 @@ class AnggotaController extends Controller
         $request->validate([
             'name'=> 'required',
             'npm'=> 'required',
-            'prodi'=> 'required',
+            'kelas'=> 'required',
             'alamat'=> 'required',
             'noTelp'=> 'required',
             'photoProfile'=> 'nullable|mimes:jpg,jpeg,png|max:2048'
@@ -135,7 +135,7 @@ class AnggotaController extends Controller
         [
             'name.required'=>"Nama tidak boleh kosong",
             'npm.required'=>"Nomor Induk tidak boleh kosong",
-            'prodi.required'=>"Prodi tidak boleh kosong",
+            'kelas.required'=>"Kelas tidak boleh kosong",
             'alamat.required'=>"Alamat tidak boleh kosong",
             'noTelp.required'=>"Nomor Telepon tidak boleh kosong",
             'photoProfile.mimes' =>"Foto Profile Harus Berupa jpg,jpeg,atau png",
@@ -159,7 +159,7 @@ class AnggotaController extends Controller
         }
         $user->name = $request->name;
         $profile->npm = $request->npm;
-        $profile->prodi = $request->prodi;
+        $profile->kelas = $request->kelas;
         $profile->alamat = $request->alamat;
         $profile->noTelp = $request->noTelp;
 

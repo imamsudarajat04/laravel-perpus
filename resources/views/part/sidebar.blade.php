@@ -3,7 +3,6 @@
         <div class="sidebar-brand-icon">
             <img src="{{ asset('/img/logo.png') }}">
         </div>
-        <div class="sidebar-brand-text mx-3">Universitas Sangga Buana</div>
     </a>
     <hr class="sidebar-divider my-0">
     <li class="nav-item">
