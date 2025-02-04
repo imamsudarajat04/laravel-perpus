@@ -36,11 +36,11 @@
         @enderror
 
         <div class="form-group mx-4 my-2">
-            <label for="nama" class="text-md text-primary font-weight-bold">Program Studi</label>
-            <input type="text" id="prodi" class="form-control @error('prodi') is-invalid @enderror" name="prodi" value="{{ old('prodi') }}">
+            <label for="kelas" class="text-md text-primary font-weight-bold">Kelas</label>
+            <input type="text" id="kelas" class="form-control @error('kelas') is-invalid @enderror" name="kelas" value="{{ old('kelas') }}">
         </div>
 
-        @error('prodi')
+        @error('kelas')
             <div class="alert-danger mx-2"> {{ $message }}</div>
         @enderror
 
